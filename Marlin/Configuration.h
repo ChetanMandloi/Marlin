@@ -123,7 +123,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "Dum dum dum"
+#define CUSTOM_MACHINE_NAME "Dee Dum Dum"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -528,12 +528,8 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-<<<<<<< HEAD
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 135, 760, 1100, 200 }
-=======
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 135, 760, 1100, 200 }
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 135, 190, 275, 200 }
->>>>>>> 59db2bb4c2b30e52b450cb080bec5085c57154c7
-
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
@@ -783,13 +779,8 @@
 // @section machine
 
 // The size of the print bed
-<<<<<<< HEAD
 #define X_BED_SIZE 2000
 #define Y_BED_SIZE 2000
-=======
-#define X_BED_SIZE 300
-#define Y_BED_SIZE 300
->>>>>>> 59db2bb4c2b30e52b450cb080bec5085c57154c7
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -1000
@@ -797,11 +788,7 @@
 #define Z_MIN_POS -1000
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-<<<<<<< HEAD
 #define Z_MAX_POS 2000
-=======
-#define Z_MAX_POS 300
->>>>>>> 59db2bb4c2b30e52b450cb080bec5085c57154c7
 
 /**
  * Software Endstops
