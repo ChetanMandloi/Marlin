@@ -528,14 +528,14 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 135, 192.7, 300, 200 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 134, 192.7, 265.5, 2 }
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 135, 190, 275, 200 }
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 3, 3, 2, 25}
+#define DEFAULT_MAX_FEEDRATE          { 3, 3, 2, 5}
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -543,7 +543,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 10, 1000, 10, 20000}
+#define DEFAULT_MAX_ACCELERATION      { 10, 1000, 10, 1000}
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -779,16 +779,16 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 2000
-#define Y_BED_SIZE 2000
+#define X_BED_SIZE 240
+#define Y_BED_SIZE 140
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -1000
-#define Y_MIN_POS -1000
-#define Z_MIN_POS -1000
+#define X_MIN_POS  0
+#define Y_MIN_POS  0
+#define Z_MIN_POS  0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 2000
+#define Z_MAX_POS 150
 
 /**
  * Software Endstops
